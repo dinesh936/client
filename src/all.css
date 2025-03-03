@@ -1,0 +1,131 @@
+  /* Table Styling */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .even-row {
+    background-color: #f1f8ff;
+  }
+  
+  .odd-row {
+    background-color: #ffffff;
+  }
+  
+  .user-table tr:hover {
+    background-color: #ffe8cc;
+    transition: 0.3s;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 5px;
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  .update-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .modal-buttons {
+    margin-top: 15px;
+  }
+  
+  .save-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background: #6c757d;
+    color: white;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  

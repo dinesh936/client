@@ -1,0 +1,271 @@
+/* 🌟 General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #67748a, #7b889d);
+}
+
+/* 🌟 Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #1a237e, #311b92);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #ffeb3b !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffeb3b !important;
+  text-shadow: 0px 0px 8px rgba(255, 235, 59, 0.8);
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #ffeb3b;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* 🌟 Carousel Styling */
+.custom-carousel {
+  max-width: 85%;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-carousel-item {
+  position: relative;
+}
+
+.custom-carousel-item img {
+  height: 550px;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-item:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .custom-carousel {
+    max-width: 95%;
+  }
+
+  .custom-carousel-item img {
+    height: 300px;
+  }
+
+  .custom-caption {
+    width: 80%;
+    padding: 10px 15px;
+  }
+
+  .custom-caption-title {
+    font-size: 20px;
+  }
+
+  .custom-caption-text {
+    font-size: 14px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+  /* REGISTER */
+ 
+  .register-container {
+    position: relative;
+    top: 150px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .register-heading {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .form-group input {
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+  }
+  
+  .submit-btn {
+    background-color: #ff7eb3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .success-message {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .reset-btn {
+    margin-top: 10px;
+    background: #ffcc00;
+    color: #000;
+  }
+/* deposite */
+
+.deposit-container {
+  position: relative;
+  top: 150px;
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  background-color: #2e7d32;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  
+}
+
+.deposit-heading {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.deposit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: white;
+}
+
+.form-group input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #ffcc00;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.submit-btn {
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ffdb4d;
+}
+
+.submit-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+

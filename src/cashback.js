@@ -34,7 +34,7 @@ export default function Withdraw() {
     }
 
     try {
-      const response = await axios.post("https://server-605x.onrender.com//data/withdraw", {
+      const response = await axios.post("https://server-605x.onrender.com/data/withdraw", {
         email,
         password,
         amount: amountToWithdraw,

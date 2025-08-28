@@ -1,42 +1,51 @@
 {
-  "name": "bank",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^1.7.9",
-    "bootstrap": "^5.3.3",
-    "cra-template": "1.2.0",
-    "cros": "^1.0.1",
-    "express": "^4.21.2",
-    "react": "^18.3.1",
-    "react-bootstrap": "^2.10.9",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.5",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
-  },
+  "name": "nodejs-login-system",
+  "version": "1.0.0",
+  "description": "A complete sign-up and sign-in system.",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",        // Used by Render in production
+    "dev": "nodemon server.js",       // For local development
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "engines": {
+    "node": ">=18.x"                  // Tell Render which Node version to use
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Furkan-Gulsen/nodejs-login-system.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "authentication",
+    "jwt",
+    "nodejs-auth",
+    "nodejs-jwt"
+  ],
+  "author": "Furkan-Gulsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Furkan-Gulsen/nodejs-login-system/issues"
+  },
+  "homepage": "https://github.com/Furkan-Gulsen/nodejs-login-system#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.6",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "googleapis": "^97.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.13.8",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
